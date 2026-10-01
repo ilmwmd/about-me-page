@@ -1,9 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
     background: linear-gradient(to top, #000000, #300151);
     color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
+    height: auto; 
+
 }
 
 header {
@@ -24,6 +29,7 @@ section {
     max-width: 700px;
     margin: 25px auto;
     box-shadow: 0 0 15px rgba(76, 29, 149, 0.3);
+    scroll-snap-align: start;
 }
 
 section h2 {
