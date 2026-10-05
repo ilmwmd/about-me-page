@@ -4,8 +4,8 @@ html {
 
 main {
     position: relative;
-    height: calc(100vh - 180px);
-    min-height: 600px;
+    height: 650px;
+    margin-top: 20px;
 }
 
 body {
@@ -62,11 +62,13 @@ section {
 
     position: absolute;
 
-    top: 0;
+    top: 20px;
     left: 50%;
 
     width: min(900px, calc(100% - 40px));
-    height: 100%;
+    min-height: 100%;
+    height: auto;
+    overflow-y: auto;
 
     transform: translate(-50%, 20px);
 
@@ -91,12 +93,14 @@ section h2 {
 
 img {
     display: block;
+    width: 100%;
     max-width: 300px;
     height: auto;
     border-radius: 10px;
     margin: 20px auto;
     border: 2px solid #7c3aed;
     box-shadow: 0 0 10px #7c3aed66;
+    box-sizing: border-box;
 }
 
 p {
@@ -206,4 +210,61 @@ footer p {
 
 .redes a:hover img {
     filter: drop-shadow(0 0 8px #8a2be2);
+}
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 2rem;
+        padding: 0 10px;
+    }
+
+    #indice {
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    #indice a {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    main {
+        height: 750px;
+        min-height: 750px;
+        margin-top: 20px;
+    }
+
+    section {
+        top: 0;
+        width: calc(100% - 24px);
+        padding: 25px 15px;
+        height: 100%;
+        min-height: 100%;
+        overflow-y: auto;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    section img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    section p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+
+    .redes {
+        gap: 25px;
+    }
 }
